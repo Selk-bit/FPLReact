@@ -49,7 +49,7 @@ class Player extends Component {
             this.props.AddPlayerClicked[i] ? 
             holder.push(
                 <div>
-                <button onClick={() => this.props.removeDefence(this.props.PlayerName[i])} className={"removeDefender" + i} ></button>
+                <img src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/close-512.png" onClick={() => this.props.removeDefence(this.props.PlayerName[i])} className={"removeDefender" + i} ></img>
                 {this.RenderDefenderShirt(i)}
                 <div className={"Defender" + i + "div"}><p className="Text">{this.props.PlayerName[i]}</p></div>
             </div>)

@@ -260,51 +260,6 @@ body {
   opacity: 0.85;
 }
 
-#conmutador-label {
-  position: fixed;
-  top: 50px;
-  right: -10px;
-  width: 110px;
-  height: 50px;
-  display: block;
-  background: white;
-  border-top-left-radius: 15% 50%;
-  border-bottom-left-radius: 15% 50%;
-  border-top-right-radius: 15% 50%;
-  border-bottom-right-radius: 15% 50%;
-  box-shadow: inset 0 0 0 23px rgba(50, 205, 50, 0.7);
-  font: bold 16px Arial, sans-serif;
-  cursor: pointer;
-  transform: rotate(90deg);
-  transition: all 05.s linear;
-  z-index: 200;
-}
-
-#conmutador-label::before {
-  position: absolute;
-  top: 5px;
-  left: 8px;
-  display: block;
-  padding: 10px;
-  background-color: white;
-  border: 1px solid grey;
-  border-radius: 50%;
-  content: "2D";
-  transform: rotate(-90deg);
-  transition: transform 0.5s linear;
-}
-
-#conmutador-input:checked~#contenedor-responsive {
-  width: 55%;
-  transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg);
-}
-
-
-#conmutador-input:checked+#conmutador-label::before {
-  content: "3D";
-  background-color: white;
-  transform: translateX(50px) rotate(-90deg);
-}
 
 /* Media queries */
 @media only screen and (max-width: 768px) {

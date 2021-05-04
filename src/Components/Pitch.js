@@ -24,7 +24,6 @@ class Pitch extends Component  {
     return (
       <div id="escenario">
         <input type="checkbox" id="conmutador-input" />
-        <label htmlFor="conmutador-input" id="conmutador-label" title="Click to change the view" />
         <div id="contenedor-responsive" title="Responsive behavior, resize your browser ;)">
         {!this.state.fieldclicked ? <div onClick={this.clickfield} className="blur"></div> : ''}
         <PlayerPosition 

@@ -6,6 +6,8 @@ import Pitch from '../Components/Pitch';
 import Balance from '../Components/Balance'; 
 import axios from '../axios-orders';
 import { storage } from "../firebaseconfig";
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 
 
@@ -70,6 +72,8 @@ class Layout extends Component {
 
 
 
+
+
     GoalieAdd = (name) => {
         let Numblues = this.state.BluesNum;
         let Numreds = this.state.RedsNum;
@@ -96,7 +100,7 @@ class Layout extends Component {
         
         else { 
 
-            alert("Can't add more Than Three Players From One Team")
+            NotificationManager.error("Can't add more Than Three Players From One Team", 'Info', 5000,);
         }
             
             
@@ -178,12 +182,14 @@ class Layout extends Component {
             }
 
             else {
-                alert("Can't add more Than Three Players From One Team")
+                NotificationManager.error("Can't add more Than Three Players From One Team", 'Info', 5000,);
+
             }
         }
 
         else {
-            alert("No place Left")
+            NotificationManager.error("No place Left", 'Info', 5000,);
+
         }
 
 
@@ -253,12 +259,14 @@ class Layout extends Component {
             }
 
             else {
-                alert("Can't add more Than Three Players From One Team")
+                NotificationManager.error("Can't add more Than Three Players From One Team", 'Info', 5000,);
+
             }
         }
 
         else {
-            alert("No place Left")
+            NotificationManager.error("No place Left", 'Info', 5000,);
+
         }
 
     }
@@ -328,12 +336,14 @@ class Layout extends Component {
             }
 
             else {
-                alert("Can't add more Than Three Players From One Team")
+                NotificationManager.error("Can't add more Than Three Players From One Team", 'Info', 5000,);
+
             }
         }
 
         else {
-            alert("No place Left")
+            NotificationManager.error("No place Left", 'Info', 5000,);
+
         }
 
     }
@@ -434,6 +444,7 @@ class Layout extends Component {
              {playerList}
              {balance}
              {pitch}
+             <NotificationContainer/>
             </div>
         ); 
 
