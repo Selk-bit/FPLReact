@@ -1,0 +1,54 @@
+.footballer-card {
+    background: rgba(255,255,255,0.3);
+    height:50%;
+    width: 50%;
+    border-radius: 20px;
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    font-family: 'Changa', sans-serif;
+    box-shadow: 0px 0px 0.1rem rgba(0,0,0,0.3), 0px 0.2rem 0.2rem rgba(0,0,0,0.3);
+  }
+  
+  .footballer-card > img {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 35px 0;
+    z-index: 100;
+  }
+
+  @mixin footballer {
+    background: linear-gradient(to right, #bc4e9c, #f80759);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    position: absolute;
+  }
+  
+  .footballer-name {
+    @include footballer;
+    font-size: 4.2vw;
+    top: 6%;
+    left: 5%;
+  }
+
+  .footballer-team {
+    @include footballer;
+    font-size: 1.5vw;
+    top: 40%;
+    left: 5%;
+  }
+
+  .footballer-position {
+    @include footballer;
+    font-size: 1.5vw;
+    top: 30%;
+    left: 5%;
+  }
+  
+  

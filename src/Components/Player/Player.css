@@ -1,0 +1,42 @@
+
+ .icon {
+    width: 14%;
+    height: 14%;
+  }
+
+
+ .pipe {
+  width: 5%;
+  height: 2.3vw;
+  position:absolute;
+  left: 82%
+}
+
+.text {
+  display: inline-block;
+}
+
+.price {
+  display: inline-block;
+  margin-top: 0.5%;
+  position: absolute;
+  left: 85%;
+  font-size: 1.5vw;
+  z-index: 300;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media (max-width: 700px) {
+
+  .pipe {
+    height: 4vw;
+    left: 58.5%
+  }
+
+  .price {
+    margin-top: 0.7%;
+    left: 62%;
+    font-size: 2.7vw;
+  }
+}

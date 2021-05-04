@@ -1,0 +1,247 @@
+
+@mixin BasePosition {
+  width: 8%;
+  height: 10%;
+  position: absolute;
+  z-index: 200;
+}
+
+@mixin BaseRemoveButton {
+  width: 3%;
+  height: 4%;
+  position: absolute;
+  z-index: 201;
+  opacity: 0.3;
+}
+
+@mixin BaseNameDiv {
+  width: 8%;
+  height: 3%;
+  background-color: white;
+  text-align: center;
+  z-index: 201;
+  position: absolute;
+
+}
+
+
+.Text {
+  font-size: 0.9vw;
+}
+
+
+.Defense-0-Position {
+    @include BasePosition;
+    top: 47%;
+    left: 1%;
+}
+
+.Defense-1-Position {
+    @include BasePosition;
+    top: 14%;
+    left : 18%;
+}
+
+.Defense-2-Position {
+  @include BasePosition;
+  top: 34%;
+  left : 18%;
+
+}
+
+.Defense-3-Position {
+  @include BasePosition;
+  top: 54%;
+  left : 18%;
+}
+
+.Defense-4-Position {
+  @include BasePosition;
+  top: 74%;
+  left : 18%;
+}
+
+.Defense-5-Position {
+  @include BasePosition;
+  top: 24%;
+  left : 46%;
+}
+
+.Defense-6-Position {
+  @include BasePosition;
+  top: 44%;
+  left : 46%;
+}
+
+.Defense-7-Position {
+  @include BasePosition;
+  top: 64%;
+  left : 46%;
+}
+
+.Defense-8-Position {
+  @include BasePosition;
+  top: 24%;
+  left : 80%;
+}
+
+.Defense-9-Position {
+  @include BasePosition;
+  top: 44%;
+  left : 80%;
+}
+
+.Defense-10-Position {
+  @include BasePosition;
+  top: 64%;
+  left : 80%;
+}
+
+
+.removeDefender0 {
+  @include BaseRemoveButton;
+    top: 43%;
+    left: 6%;
+}
+
+.removeDefender1 {
+  @include BaseRemoveButton;
+  top: 10%;
+  left: 23%;
+}
+
+.removeDefender2 {
+  @include BaseRemoveButton;
+  top: 30%;
+  left: 23%;
+}
+
+.removeDefender3 {
+  @include BaseRemoveButton;
+  top: 50%;
+  left: 23%;
+}
+
+.removeDefender4 {
+  @include BaseRemoveButton;
+  top: 70%;
+  left: 23%;
+}
+
+.removeDefender5 {
+  @include BaseRemoveButton;
+  top: 20%;
+  left: 51%;
+}
+
+.removeDefender6 {
+  @include BaseRemoveButton;
+  top: 40%;
+  left: 51%;
+}
+
+.removeDefender7 {
+  @include BaseRemoveButton;
+  top: 60%;
+  left: 51%;
+}
+
+.removeDefender8 {
+  @include BaseRemoveButton;
+  top: 20%;
+  left: 85%;
+}
+
+.removeDefender9 {
+  @include BaseRemoveButton;
+  top: 40%;
+  left: 85%;
+}
+
+.removeDefender10 {
+  @include BaseRemoveButton;
+  top: 60%;
+  left: 85%;
+}
+
+@for $i from 0 through 10 {
+  .removeDefender#{$i}:hover{
+    opacity: 1;
+  }
+}
+
+  .Defender0div {
+    @include BaseNameDiv;
+    top: 57.5%;
+    left: 1%;
+  }
+
+  .Defender1div {
+    @include BaseNameDiv;
+    top: 25%;
+    left: 18%;
+  }
+
+  .Defender2div {
+    @include BaseNameDiv;
+    top: 45%;
+    left: 18%;
+  }
+
+  .Defender3div {
+    @include BaseNameDiv;
+    top: 65%;
+    left: 18%;
+  }
+
+  .Defender4div {
+    @include BaseNameDiv;
+    top: 85%;
+    left: 18%;
+  }
+
+  .Defender5div {
+    @include BaseNameDiv;
+    top: 35%;
+    left: 46%;
+  }
+
+  .Defender6div {
+    @include BaseNameDiv;
+    top: 55%;
+    left: 46%;
+  }
+
+  .Defender7div {
+    @include BaseNameDiv;
+    top: 75%;
+    left: 46%;
+  }
+
+  .Defender8div {
+    @include BaseNameDiv;
+    top: 35%;
+    left: 80%;
+  }
+
+  .Defender9div {
+    @include BaseNameDiv;
+    top: 55%;
+    left: 80%;
+  }
+
+  .Defender10div {
+    @include BaseNameDiv;
+    top: 75%;
+    left: 80%;
+  }
+
+$breakpoint-tablet: 700px;
+@media (max-width: $breakpoint-tablet) {
+  .Text {
+    font-size: 1.5vw;
+  }
+}
+
+
+ 

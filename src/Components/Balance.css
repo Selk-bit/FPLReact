@@ -1,0 +1,36 @@
+.score-counter {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 15vw;
+    height: 4vw;
+    background: rgba(0, 0, 0, 0.749);
+    border: 4px solid #000;
+    position: absolute;
+    top: 4vw;
+    right: 30vw;
+    box-shadow: inset 2px -2px 9px #020202, inset -2px 2px 9px #d2d2d2;
+    z-index: 300;
+    color: white;
+}
+
+.score-text {
+    font-size: 1.2vw;
+}
+
+
+@media (max-width: 700px) {
+    .score-counter {
+        width: 20vw;
+        height: 5vw;
+        top: 60vw;
+        right: 3vw;
+    }
+
+    .score-text {
+        font-size: 1.8vw;
+    }
+
+    }
