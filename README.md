@@ -11,3 +11,5 @@ The App is Responsive.
 The database is initialized with some random players to enable hosting a demo on heroku : https://reactteamselector.herokuapp.com/
 
 Run npm install followed by npm start after cloning the repo as always.
+
+Change the base Url of the axios instance created in the axios-ordres.js file to your database Url, as well as your storage API variables in the firebaseconfig.js file, and you're good to go.
