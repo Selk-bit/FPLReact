@@ -8,6 +8,6 @@ After adding a player to the pitch, clicking at him fires a card like shape hold
 
 The App is Responsive.
 
-The database is initialized with random players to enable hosting a demo on heroku : https://reactteamselector.herokuapp.com/
+The database is initialized with some random players to enable hosting a demo on heroku : https://reactteamselector.herokuapp.com/
 
 Run npm install followed by npm start after cloning the repo as always.
