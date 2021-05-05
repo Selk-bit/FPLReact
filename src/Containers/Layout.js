@@ -14,12 +14,6 @@ import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 class Layout extends Component {
 
-    //   Players: {
-    //      Goal: {Salim: "blues", Yassine: "blues", Adam: "reds"},
-    //      Deffense: {Oussama: "blues", Adel: "blues", l7amz: "blues", Tarik: "blues",  Adnan: "reds",  Boazza: "reds",  nigga: "reds"},
-    //      Midfield: {Ou7moz: "blues", Zeggaf: "blues"},
-    //      Attack: {Ou7mot: "blues", Adnan: "blues"}
-    //  },
 
     state = {
         Players: null,
