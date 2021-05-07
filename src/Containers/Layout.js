@@ -77,9 +77,9 @@ class Layout extends Component {
         let playerteam = this.state.PlayerTeam;
         let currentbalance = this.state.balance - this.state.Players.Goal[name][1];
         for(let i=0; i<this.state.Url.length; i++){
-            let zbi = this.state.Url[i];
-            if(zbi[name]){
-                piturls[0] = zbi[name];
+            let UrlsHolder = this.state.Url[i];
+            if(UrlsHolder[name]){
+                piturls[0] = UrlsHolder[name];
             }
 
         }
@@ -126,9 +126,9 @@ class Layout extends Component {
                     holderV2[4] = name;
                     playerteam[4] = this.state.Players.Deffense[name][0];
                     for(let i=0; i<this.state.Url.length; i++){
-                        let zbi = this.state.Url[i];
-                        if(zbi[name]){
-                            piturls[4] = zbi[name];
+                        let UrlsHolder = this.state.Url[i];
+                        if(UrlsHolder[name]){
+                            piturls[4] = UrlsHolder[name];
                         }
                     }
                     this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})}
@@ -138,9 +138,9 @@ class Layout extends Component {
                         holderV2[3] = name;
                         playerteam[3] = this.state.Players.Deffense[name][0];
                         for(let i=0; i<this.state.Url.length; i++){
-                            let zbi = this.state.Url[i];
-                            if(zbi[name]){
-                                piturls[3] = zbi[name];
+                            let UrlsHolder = this.state.Url[i];
+                            if(UrlsHolder[name]){
+                                piturls[3] = UrlsHolder[name];
                             }
                         }
                         this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})}
@@ -150,9 +150,9 @@ class Layout extends Component {
                             holderV2[2] = name;
                             playerteam[2] = this.state.Players.Deffense[name][0];
                             for(let i=0; i<this.state.Url.length; i++){
-                                let zbi = this.state.Url[i];
-                                if(zbi[name]){
-                                    piturls[2] = zbi[name];
+                                let UrlsHolder = this.state.Url[i];
+                                if(UrlsHolder[name]){
+                                    piturls[2] = UrlsHolder[name];
                                 }
                             }
                             this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})}
@@ -161,9 +161,9 @@ class Layout extends Component {
                             holderV2[1] = name;
                             playerteam[1] = this.state.Players.Deffense[name][0];
                             for(let i=0; i<this.state.Url.length; i++){
-                                let zbi = this.state.Url[i];
-                                if(zbi[name]){
-                                    piturls[1] = zbi[name];
+                                let UrlsHolder = this.state.Url[i];
+                                if(UrlsHolder[name]){
+                                    piturls[1] = UrlsHolder[name];
                                 }
                             }
                             this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})}
@@ -214,9 +214,9 @@ class Layout extends Component {
                     holderV2[7] = name;
                     playerteam[7] = this.state.Players.Midfield[name][0];
                     for(let i=0; i<this.state.Url.length; i++){
-                        let zbi = this.state.Url[i];
-                        if(zbi[name]){
-                            piturls[7] = zbi[name];
+                        let UrlsHolder = this.state.Url[i];
+                        if(UrlsHolder[name]){
+                            piturls[7] = UrlsHolder[name];
                         }
                     }
                     this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})}
@@ -226,9 +226,9 @@ class Layout extends Component {
                         holderV2[6] = name;
                         playerteam[6] = this.state.Players.Midfield[name][0];
                         for(let i=0; i<this.state.Url.length; i++){
-                            let zbi = this.state.Url[i];
-                            if(zbi[name]){
-                                piturls[6] = zbi[name];
+                            let UrlsHolder = this.state.Url[i];
+                            if(UrlsHolder[name]){
+                                piturls[6] = UrlsHolder[name];
                             }
                         }
                         this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})}
@@ -238,9 +238,9 @@ class Layout extends Component {
                             holderV2[5] = name;
                             playerteam[5] = this.state.Players.Midfield[name][0];
                             for(let i=0; i<this.state.Url.length; i++){
-                                let zbi = this.state.Url[i];
-                                if(zbi[name]){
-                                    piturls[5] = zbi[name];
+                                let UrlsHolder = this.state.Url[i];
+                                if(UrlsHolder[name]){
+                                    piturls[5] = UrlsHolder[name];
                                 }
                             }
                             this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})
@@ -291,9 +291,9 @@ class Layout extends Component {
                     holderV2[10] = name;
                     playerteam[10] = this.state.Players.Attack[name][0];
                     for(let i=0; i<this.state.Url.length; i++){
-                        let zbi = this.state.Url[i];
-                        if(zbi[name]){
-                            piturls[10] = zbi[name];
+                        let UrlsHolder = this.state.Url[i];
+                        if(UrlsHolder[name]){
+                            piturls[10] = UrlsHolder[name];
                         }
                     }
                     this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})}
@@ -303,9 +303,9 @@ class Layout extends Component {
                         holderV2[9] = name;
                         playerteam[9] = this.state.Players.Attack[name][0];
                         for(let i=0; i<this.state.Url.length; i++){
-                            let zbi = this.state.Url[i];
-                            if(zbi[name]){
-                                piturls[9] = zbi[name];
+                            let UrlsHolder = this.state.Url[i];
+                            if(UrlsHolder[name]){
+                                piturls[9] = UrlsHolder[name];
                             }
                         }
                         this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})}
@@ -315,9 +315,9 @@ class Layout extends Component {
                             holderV2[8] = name;
                             playerteam[8] = this.state.Players.Attack[name][0];
                             for(let i=0; i<this.state.Url.length; i++){
-                                let zbi = this.state.Url[i];
-                                if(zbi[name]){
-                                    piturls[8] = zbi[name];
+                                let UrlsHolder = this.state.Url[i];
+                                if(UrlsHolder[name]){
+                                    piturls[8] = UrlsHolder[name];
                                 }
                             }
                             this.setState({AddPlayerClicked: holder, PlayerName: holderV2, UrlsOnPitch: piturls, PlayerTeam: playerteam, balance: currentbalance})
