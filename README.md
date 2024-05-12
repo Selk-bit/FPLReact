@@ -20,12 +20,6 @@ The Team Selector is a dynamic web application developed using React.js and inte
 ## Responsive Design
 - The application is fully responsive, ensuring a seamless experience across various devices and screen sizes.
 
-## Setup and Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone [repository-url]
-
 
 For more, visit my LinkedIn profile: [Salim Elkellouti](https://www.linkedin.com/in/salim-elkellouti/).
 
