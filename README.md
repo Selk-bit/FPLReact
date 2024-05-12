@@ -1,16 +1,31 @@
+# Team Selector Application
 
-A basic Team Selector app coded with Reactjs and powered by Firebase. 
+The Team Selector is a dynamic web application developed using React.js and integrated with Firebase. It is designed to assist in selecting and managing sports players for team compositions effectively and interactively.
 
-Each Player ships with his respective data (Name, Team, Price and Position) allowing the user to select him to fill any of the free spots on the pitch in accordance with his adequate position, or remove him from the pitch by clicking the X button.
-There are two teams for the moment (Reds and Blues), with the possibility to add more in the future as the app is still in the process of being created.
-Some restrictions are imposed, such as the inability to choose more than three players from the same team.
-After adding a player to the pitch, clicking at him fires a card like shape holding some more detailed info concerning the player.
-You can add a player to your database by routing to ***/add***, and filling the form obviously.
+## Features
 
-The App is Responsive.
+### Player Data Management
+- **Detailed Attributes**: Each player comes with attributes such as Name, Team, Price, and Position, allowing for informed selection decisions.
 
-The database is initialized with some random players to enable hosting a demo on heroku : https://reactteamselector.herokuapp.com/
+### Interactive Player Selection
+- **Add/Remove Players**: Users can dynamically add players to a visual representation of the pitch according to their positions and remove them as needed by clicking the 'X' on their profile.
+- **Player Information Cards**: Clicking on a player displays a card with more detailed information, enriching the user's interactive experience.
 
-Run ***npm install***  followed by ***npm start***  after cloning the repo as always.
+### Team Restrictions
+- **Team Diversity**: Supports two initial teams (Reds and Blues) with functionality to add more. Limits selection to a maximum of three players from the same team to promote diversity.
 
-Change the base Url of the axios instance created in the ***axios-ordres.js***  file to your database's Url, as well as your storage API variables in the ***firebaseconfig.js***  file, and you're good to go.
+### Add New Players
+- **Player Addition**: Users can add new players to the database via the `/add` route using a simple form.
+
+## Responsive Design
+- The application is fully responsive, ensuring a seamless experience across various devices and screen sizes.
+
+## Setup and Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [repository-url]
+
+
+For more, visit my LinkedIn profile: [Salim Elkellouti](https://www.linkedin.com/in/salim-elkellouti/).
+
