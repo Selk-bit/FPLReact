@@ -21,5 +21,8 @@ The Team Selector is a dynamic web application developed using React.js and inte
 - The application is fully responsive, ensuring a seamless experience across various devices and screen sizes.
 
 
+
+
+
 For more, visit my LinkedIn profile: [Salim Elkellouti](https://www.linkedin.com/in/salim-elkellouti/).
 
